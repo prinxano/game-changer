@@ -1,50 +1,39 @@
-/* Reset */
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Full-screen background image */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-}
-
-/* Image Styling */
-.background-image {
-  position: relative;
-  width: 100%;
   height: 100vh;
-  overflow: hidden;
-}
-
-.main-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* Content Styling */
-.content {
+  width: 100vw;
+  background-image: url('game changer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  z-index: 2;
-  padding: 100px 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Overlay for better text visibility */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
 }
 
 h1 {
   font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 p {
